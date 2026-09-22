@@ -4,9 +4,11 @@
 // Használat:
 //   node scripts/merge-translations.mjs translations.json
 //
-// A translations.json tartalma egy tömb, minden eleme a pending.json egy tételének ID-jét
-// és a hozzá tartozó magyar fordítást adja meg:
-//   [{ "id": "a9fb297dd135", "title": "Magyar cím...", "excerpt": "Magyar kivonat..." }, ...]
+// A translations.json tartalma egy tömb, minden eleme a pending.json egy tételének ID-jét,
+// a hozzá tartozó magyar fordítást és a kategóriáját adja meg (lásd data/categories.json a
+// használható category id-kért):
+//   [{ "id": "a9fb297dd135", "title": "Magyar cím...", "excerpt": "Magyar kivonat...",
+//      "category": "termeszet" }, ...]
 //
 // Azok a pending tételek, amikhez nincs fordítás a bemeneti fájlban, egyszerűen bent maradnak
 // a pending.json-ban (legközelebb lehet velük folytatni).
@@ -15,6 +17,7 @@ import { readFile, writeFile } from "node:fs/promises";
 
 const NEWS_FILE = new URL("../data/news.json", import.meta.url);
 const PENDING_FILE = new URL("../data/pending.json", import.meta.url);
+const CATEGORIES_FILE = new URL("../data/categories.json", import.meta.url);
 const MAX_ITEMS_TOTAL = 80;
 
 async function loadJsonArray(fileUrl) {
@@ -42,6 +45,8 @@ async function main() {
 
   const news = await loadJsonArray(NEWS_FILE);
   const pending = await loadJsonArray(PENDING_FILE);
+  const categories = await loadJsonArray(CATEGORIES_FILE);
+  const validCategoryIds = new Set(categories.map((c) => c.id));
   const pendingById = new Map(pending.map((it) => [it.id, it]));
 
   const newEntries = [];
@@ -57,10 +62,15 @@ async function main() {
       console.warn(`[warn] Hiányzó title/excerpt, kihagyva: ${t.id}`);
       continue;
     }
+    if (!t.category || !validCategoryIds.has(t.category)) {
+      console.warn(`[warn] Hiányzó/ismeretlen category (${t.category}), kihagyva: ${t.id}`);
+      continue;
+    }
     newEntries.push({
       id: source.id,
       title: t.title,
       excerpt: t.excerpt,
+      category: t.category,
       url: source.url,
       source: source.source,
       publishedAt: source.publishedAt,

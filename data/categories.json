@@ -1,0 +1,8 @@
+[
+  { "id": "tudomany", "label": "Tudomány & Technológia", "emoji": "🔬", "color": "#4F46E5" },
+  { "id": "egeszseg", "label": "Egészségügy", "emoji": "🩺", "color": "#F43F5E" },
+  { "id": "termeszet", "label": "Természet & Állatvilág", "emoji": "🦋", "color": "#16A34A" },
+  { "id": "kornyezet", "label": "Környezet & Fenntarthatóság", "emoji": "🌍", "color": "#0D9488" },
+  { "id": "tarsadalom", "label": "Társadalom & Közösség", "emoji": "🤝", "color": "#9333EA" },
+  { "id": "eletmod", "label": "Életmód & Jóllét", "emoji": "✨", "color": "#D97706" }
+]
