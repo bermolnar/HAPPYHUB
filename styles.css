@@ -129,7 +129,6 @@ body {
 }
 .hero-inner {
   max-width: 42rem;
-  margin-inline: 0;
   position: relative;
 }
 .hero-dots {
