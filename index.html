@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HappyHub – Csak jó hírek a világból</title>
+<meta name="description" content="A HappyHub minden nap összegyűjti a világ jó híreit – tudományos áttörések, természetvédelmi sikerek, emberi jóság –, hogy egy kicsit optimistábban lásd a világot." />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#hirek">Ugrás a hírekhez</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top">
+      <span class="logo-mark" aria-hidden="true">☀︎</span>
+      <span class="logo-text">HappyHub</span>
+    </a>
+    <p class="tagline">Csak jó hírek a világból</p>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <h1>Minden nap van ok a reményre.</h1>
+      <p class="hero-lead">
+        A hírek nagy része félelemre és aggodalomra épül – pedig a világban nap mint nap történnek
+        biztató, szép, reményt adó dolgok is. A HappyHub ezeket gyűjti össze egy helyen, hogy
+        erősítse a pozitív világképedet.
+      </p>
+      <div class="hero-stats" id="hero-stats" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section id="hirek" class="news-section">
+    <div class="wrap">
+      <h2 class="section-title">Friss jó hírek</h2>
+      <p class="section-lead">Válogatás a világ vezető pozitívhír-forrásaiból, magyarra fordítva.</p>
+
+      <div id="news-grid" class="news-grid" aria-live="polite">
+        <p class="news-loading">Hírek betöltése…</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="wrap about-inner">
+      <h2 class="section-title">Honnan jönnek a hírek?</h2>
+      <p>
+        A HappyHub nem ír saját cikkeket, hanem olyan nemzetközi oldalakat követ, amelyek
+        kifejezetten jó hírek gyűjtésére szakosodtak (pl. Good News Network, Positive News,
+        Reasons to be Cheerful, The Optimist Daily). Minden hírnél feltüntetjük az eredeti
+        forrást és linkelünk a teljes cikkre – a HappyHub csak a magyar nyelvű rövid összefoglalót
+        adja hozzá, hogy könnyebben áttekinthető legyen minden jó hír egy helyen.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>HappyHub · Csak jó hírek a világból</p>
+    <p class="footer-note">A hírek forrása mindig fel van tüntetve az eredeti cikkeknél.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "happyhub-news-fetcher",
+  "private": true,
+  "type": "module",
+  "description": "CI-only script that collects and translates positive news for the HappyHub static site. Not shipped to the browser.",
+  "scripts": {
+    "fetch-news": "node scripts/fetch-news.mjs"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.5.0"
+  }
+}
