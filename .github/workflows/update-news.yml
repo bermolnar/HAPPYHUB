@@ -1,8 +1,8 @@
-name: Hírek frissítése
+name: Hírek gyűjtése
 
 on:
   schedule:
-    # Minden nap 6:00, 12:00 és 18:00-kor (UTC) - kb. napi 3x friss jó hír.
+    # Minden nap 6:00, 12:00 és 18:00-kor (UTC) - kb. napi 3x friss jelölt.
     - cron: "0 6,12,18 * * *"
   workflow_dispatch: {}
 
@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 jobs:
-  update-news:
+  fetch-news:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -24,19 +24,17 @@ jobs:
       - name: Függőségek telepítése
         run: npm ci
 
-      - name: Hírek gyűjtése és fordítása
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - name: Új angol cikkek gyűjtése a data/pending.json-ba
         run: npm run fetch-news
 
-      - name: Változások commitolása, ha van új hír
+      - name: Változások commitolása, ha van új jelölt
         run: |
-          if git diff --quiet -- data/news.json; then
-            echo "Nincs változás, nem commitolok."
+          if git diff --quiet -- data/pending.json; then
+            echo "Nincs új jelölt, nem commitolok."
             exit 0
           fi
           git config user.name "happyhub-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/news.json
-          git commit -m "Hírek automatikus frissítése"
+          git add data/pending.json
+          git commit -m "Új hírjelöltek gyűjtése (fordításra várnak)"
           git push
