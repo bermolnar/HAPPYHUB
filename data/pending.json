@@ -387,6 +387,15 @@
     "fetchedAt": "2026-09-24T20:49:57.948Z"
   },
   {
+    "id": "d6c4d65187de",
+    "title": "Good News in History, September 18",
+    "excerpt": "188 years ago today, the Anti-Corn Law League was established in England by the economics-savvy liberals who understood that protectionism is immoral and useless in benefiting the economy. The League, led by Richard Cobden and heavily influenced by economist Daniel Riccardo, succeeded in seeing the Corn Laws of 1815 abolished, laying out the first laizzez-faire [...] The post Good News in History,",
+    "url": "https://www.goodnewsnetwork.org/events060918/",
+    "source": "Good News Network",
+    "publishedAt": "2026-09-18T07:00:00.000Z",
+    "fetchedAt": "2026-09-25T20:47:05.364Z"
+  },
+  {
     "id": "dce422df8c4e",
     "title": "Berlin's REWE supermarket: the grocery store with a working rooftop farm",
     "excerpt": "BY THE OPTIMIST DAILY EDITORIAL TEAM The lettuce in REWE's Lankwitz store in Berlin has had a short morning. Grown on the rooftop farm directly above, cut, packaged by hand, and carried downstairs before most shoppers walk in, the whole trip from farm to shelf is measured not in miles but in flights of stairs. [...] The post Berlin’s REWE supermarket: the grocery store with a working rooftop farm ",
@@ -394,6 +403,33 @@
     "source": "The Optimist Daily",
     "publishedAt": "2026-09-18T00:00:32.000Z",
     "fetchedAt": "2026-09-22T20:31:32.759Z"
+  },
+  {
+    "id": "d8237f726f40",
+    "title": "Team Sequesters Plastic and Makes New Products Before it Breaks Down in Environment",
+    "excerpt": "In central California's city of San Carlos, recycling plastics is a family affair. Nick Schick and his parents, David and Andrea, work exclusively with products made from hard-to-recycle plastic polymers called thermoplastics. Unlike water bottles and tote bags, thermoplastics lack conventional recycling methods. In order to stop them from reaching the landfills where they will [...] The post Team",
+    "url": "https://www.goodnewsnetwork.org/team-sequesters-plastic-and-makes-new-products-before-it-breaks-down-in-environment/",
+    "source": "Good News Network",
+    "publishedAt": "2026-09-17T18:30:31.000Z",
+    "fetchedAt": "2026-09-25T20:47:05.364Z"
+  },
+  {
+    "id": "0b07dd86f5c3",
+    "title": "Scientists Solve Mystery Behind Snowfall That Dropped 695 Billion Tons of Ice on Antarctica",
+    "excerpt": "A warming pool of tropical ocean water has been shown to be the cause of immense snowstorms over East Antarctica which contributed to a net gain of 695 billion tons of ice between 2021 and 2023. To put that tonnage into perspective, it's about 4 years of annual ice loss according to a 2 decade [...] The post Scientists Solve Mystery Behind Snowfall That Dropped 695 Billion Tons of Ice on Antarctic",
+    "url": "https://www.goodnewsnetwork.org/scientists-solve-mystery-behind-snowfall-that-dropped-695-billion-tons-of-ice-on-antarctica/",
+    "source": "Good News Network",
+    "publishedAt": "2026-09-17T15:30:25.000Z",
+    "fetchedAt": "2026-09-25T20:47:05.364Z"
+  },
+  {
+    "id": "df762919586a",
+    "title": "Chinese Scientists Develop New Oil Refining Method That Cuts Energy Use by 90%",
+    "excerpt": "Rather than bringing crude oil to boiling point over and over again as is done in traditional distillation refining, Chinese scientists have found a way to separate the mixture molecule by molecule at room temperature, cutting energy use by 90%. The groundbreaking discovery was done in the lab, and so it can't be said for [...] The post Chinese Scientists Develop New Oil Refining Method That Cuts ",
+    "url": "https://www.goodnewsnetwork.org/chinese-scientists-develop-new-oil-refining-method-that-cuts-energy-use-by-90/",
+    "source": "Good News Network",
+    "publishedAt": "2026-09-17T13:00:22.000Z",
+    "fetchedAt": "2026-09-25T20:47:05.364Z"
   },
   {
     "id": "99b7538dd647",
@@ -502,14 +538,5 @@
     "source": "Positive News",
     "publishedAt": "2026-09-09T10:16:53.000Z",
     "fetchedAt": "2026-09-23T10:19:52.272Z"
-  },
-  {
-    "id": "563f4a410fe3",
-    "title": "What We’re Reading: What If You Could Opt Out of Algorithms?",
-    "excerpt": "Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking. Tell us what you've been reading at info@reasonstobecheerful.world and we just might feature it here. Safe scrolling In December, Australia became the first country in the world to ban children under 16 from holding social media accounts... The post What We’re Reading: What If You Could Opt Out of Algorithms? ",
-    "url": "https://reasonstobecheerful.world/what-were-reading-australia-says-algorithms-optional/",
-    "source": "Reasons to be Cheerful",
-    "publishedAt": "2026-09-09T08:00:32.000Z",
-    "fetchedAt": "2026-09-22T20:31:32.759Z"
   }
 ]
